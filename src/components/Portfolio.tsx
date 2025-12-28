@@ -70,7 +70,7 @@ const Portfolio = () => {
             Featured <span className="text-primary">Projects</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A selection of websites I've designed and built for clients across various industries.
+            A curated collection of website prototypes I've designed and developed as demo projects to showcase my services.
           </p>
         </div>
 
