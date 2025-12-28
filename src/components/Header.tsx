@@ -41,7 +41,7 @@ const Header = () => {
       <div className="section-container flex items-center justify-between">
         <a
           href="#"
-          className="text-xl font-bold tracking-tight hover:text-primary transition-colors"
+          className="text-xl font-display font-semibold tracking-tight hover:text-primary transition-colors"
           onClick={(e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: "smooth" });

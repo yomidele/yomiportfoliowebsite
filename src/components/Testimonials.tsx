@@ -26,10 +26,10 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="py-24">
+    <section id="testimonials" className="py-28">
       <div className="section-container">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
+          <span className="inline-block text-primary text-sm font-medium tracking-wide uppercase mb-4">
             Testimonials
           </span>
           <h2 className="heading-lg mb-4">
@@ -44,30 +44,30 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.id}
-              className="group relative bg-card p-8 rounded-2xl border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-xl"
+              className="group relative bg-card p-8 rounded-xl border border-border hover:border-primary/30 transition-all duration-300 hover:shadow-lg"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Quote icon */}
-              <div className="absolute -top-4 left-8">
-                <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                  <Quote className="w-5 h-5 text-primary-foreground" />
+              <div className="absolute -top-3 left-8">
+                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                  <Quote className="w-4 h-4 text-primary-foreground" />
                 </div>
               </div>
 
               <div className="mt-4">
-                <p className="text-muted-foreground italic mb-6 leading-relaxed">
+                <p className="text-muted-foreground italic mb-6 leading-relaxed text-sm">
                   "{testimonial.quote}"
                 </p>
 
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                    <span className="text-primary font-semibold text-lg">
+                <div className="flex items-center gap-3 pt-4 border-t border-border">
+                  <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                    <span className="text-primary font-semibold">
                       {testimonial.name.charAt(0)}
                     </span>
                   </div>
                   <div>
-                    <div className="font-semibold">{testimonial.name}</div>
-                    <div className="text-sm text-muted-foreground">
+                    <div className="font-medium text-sm">{testimonial.name}</div>
+                    <div className="text-xs text-muted-foreground">
                       {testimonial.role}
                     </div>
                   </div>
