@@ -48,7 +48,7 @@ const Header = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          Yomi<span className="text-primary">.</span>
+          Yomi Dele<span className="text-primary">.</span>
         </a>
 
         {/* Desktop Navigation */}

@@ -22,7 +22,7 @@ const Footer = () => {
             onClick={scrollToTop}
             className="text-2xl font-display font-semibold tracking-tight hover:text-primary transition-colors"
           >
-            Yomi<span className="text-primary">.</span>
+            Yomi Dele<span className="text-primary">.</span>
           </button>
 
           {/* Social Links */}
