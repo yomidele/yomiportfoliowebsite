@@ -26,11 +26,11 @@ const projects = [
   },
   {
     id: 3,
-    title: "Aperture Portfolio",
-    description: "Photographer portfolio showcasing stunning visual work.",
-    tech: "Custom HTML/CSS",
+    title: "Royal Trims",
+    description: "Professional barbing salon website with sleek design.",
+    tech: "Lovable, React",
     image: project3,
-    link: "#",
+    link: "https://yomideledemo2.lovable.app",
   },
   {
     id: 4,
