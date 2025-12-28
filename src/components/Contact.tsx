@@ -38,10 +38,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-secondary/30">
+    <section id="contact" className="py-28 bg-secondary/50">
       <div className="section-container">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
+          <span className="inline-block text-primary text-sm font-medium tracking-wide uppercase mb-4">
             Contact
           </span>
           <h2 className="heading-lg mb-4">
@@ -52,25 +52,25 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-16 max-w-5xl mx-auto">
           {/* Contact Info */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6">Get In Touch</h3>
-            <p className="text-muted-foreground mb-8">
+            <h3 className="text-xl font-display font-semibold mb-6">Get In Touch</h3>
+            <p className="text-muted-foreground mb-8 leading-relaxed">
               Have a project in mind? I'd love to hear about it. Send me a message
               and I'll get back to you within 24 hours.
             </p>
 
-            <div className="space-y-6">
+            <div className="space-y-5">
               <a
                 href="mailto:yomidele2120@gmail.com"
                 className="flex items-center gap-4 group"
               >
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary transition-colors">
+                <div className="w-11 h-11 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary transition-colors">
                   <Mail className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
                 <div>
-                  <div className="text-sm text-muted-foreground">Email</div>
+                  <div className="text-xs text-muted-foreground uppercase tracking-wide">Email</div>
                   <div className="font-medium group-hover:text-primary transition-colors">
                     yomidele2120@gmail.com
                   </div>
@@ -81,11 +81,11 @@ const Contact = () => {
                 href="tel:+2347037874377"
                 className="flex items-center gap-4 group"
               >
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary transition-colors">
+                <div className="w-11 h-11 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary transition-colors">
                   <Phone className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
                 <div>
-                  <div className="text-sm text-muted-foreground">Phone</div>
+                  <div className="text-xs text-muted-foreground uppercase tracking-wide">Phone</div>
                   <div className="font-medium group-hover:text-primary transition-colors">
                     07037874377
                   </div>
@@ -98,11 +98,11 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 group"
               >
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary transition-colors">
+                <div className="w-11 h-11 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary transition-colors">
                   <MessageCircle className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
                 <div>
-                  <div className="text-sm text-muted-foreground">WhatsApp</div>
+                  <div className="text-xs text-muted-foreground uppercase tracking-wide">WhatsApp</div>
                   <div className="font-medium group-hover:text-primary transition-colors">
                     Chat on WhatsApp
                   </div>
@@ -112,7 +112,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-card p-8 rounded-2xl border border-border">
+          <div className="bg-card p-8 rounded-xl border border-border shadow-sm">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label

@@ -14,35 +14,35 @@ const Footer = () => {
   };
 
   return (
-    <footer className="py-12 bg-foreground text-background">
+    <footer className="py-16 border-t border-border bg-secondary/30">
       <div className="section-container">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo */}
           <button
             onClick={scrollToTop}
-            className="text-2xl font-bold tracking-tight hover:text-primary transition-colors"
+            className="text-2xl font-display font-semibold tracking-tight hover:text-primary transition-colors"
           >
             Yomi<span className="text-primary">.</span>
           </button>
 
           {/* Social Links */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             {socialLinks.map((social) => (
               <a
                 key={social.label}
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all"
+                className="w-10 h-10 rounded-full border border-border flex items-center justify-center hover:bg-primary hover:border-primary hover:text-primary-foreground transition-all duration-300"
                 aria-label={social.label}
               >
-                <social.icon className="w-5 h-5" />
+                <social.icon className="w-4 h-4" />
               </a>
             ))}
           </div>
 
           {/* Copyright */}
-          <p className="text-background/60 text-sm">
+          <p className="text-muted-foreground text-sm">
             © {currentYear} Yomi Dele. All rights reserved.
           </p>
         </div>

@@ -29,10 +29,10 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-24 bg-secondary/30">
+    <section id="services" className="py-28 bg-secondary/50">
       <div className="section-container">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
+          <span className="inline-block text-primary text-sm font-medium tracking-wide uppercase mb-4">
             Services
           </span>
           <h2 className="heading-lg mb-4">
@@ -43,28 +43,25 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="group relative bg-card p-8 rounded-2xl border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:-translate-y-2"
+              className="group relative bg-card p-8 rounded-xl border border-border hover:border-primary/30 transition-all duration-300 hover:shadow-lg"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Icon */}
-              <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                <service.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors" />
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-all duration-300">
+                <service.icon className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
               </div>
 
-              <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
+              <h3 className="text-lg font-display font-semibold mb-3 group-hover:text-primary transition-colors">
                 {service.title}
               </h3>
 
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground text-sm leading-relaxed">
                 {service.description}
               </p>
-
-              {/* Decorative corner */}
-              <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-3xl rounded-tr-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
           ))}
         </div>

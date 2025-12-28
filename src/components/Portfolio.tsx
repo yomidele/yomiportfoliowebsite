@@ -78,7 +78,7 @@ const Portfolio = () => {
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className="group relative bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:-translate-y-2"
+              className="group relative bg-card rounded-xl overflow-hidden border border-border hover:border-primary/30 transition-all duration-500 hover:shadow-lg hover:-translate-y-1"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Image */}
@@ -86,9 +86,9 @@ const Portfolio = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+                <div className="absolute inset-0 bg-foreground/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <Button variant="hero" size="sm" asChild>
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
                       View Live
@@ -100,13 +100,13 @@ const Portfolio = () => {
 
               {/* Content */}
               <div className="p-6">
-                <div className="text-xs font-medium text-primary mb-2">
+                <div className="text-xs font-medium text-primary mb-2 tracking-wide uppercase">
                   {project.tech}
                 </div>
-                <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
+                <h3 className="text-lg font-display font-semibold mb-2 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground text-sm">
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   {project.description}
                 </p>
               </div>
