@@ -10,19 +10,19 @@ import project6 from "@/assets/project-6.jpg";
 const projects = [
   {
     id: 1,
-    title: "TechFlow SaaS",
+    title: "FlowFlask SaaS",
     description: "Modern SaaS landing page with animations and lead generation forms.",
-    tech: "Webflow, GSAP",
+    tech: "Lovable, React",
     image: project1,
-    link: "#",
+    link: "https://flow-flask.lovable.app",
   },
   {
     id: 2,
-    title: "StyleHaven Store",
+    title: "Urban Edge Clothing",
     description: "E-commerce fashion store with seamless checkout experience.",
-    tech: "WordPress, WooCommerce",
+    tech: "Lovable, React",
     image: project2,
-    link: "#",
+    link: "https://style-refinery-demo.lovable.app",
   },
   {
     id: 3,
@@ -34,11 +34,11 @@ const projects = [
   },
   {
     id: 4,
-    title: "CloudSync App",
-    description: "Tech startup landing page with modern gradient design.",
-    tech: "Framer, React",
+    title: "WebDev Insight",
+    description: "Web development blog and resource hub with modern design.",
+    tech: "Lovable, React",
     image: project4,
-    link: "#",
+    link: "https://webdevdemo.lovable.app",
   },
   {
     id: 5,
