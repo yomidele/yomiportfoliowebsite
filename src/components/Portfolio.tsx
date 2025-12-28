@@ -42,19 +42,19 @@ const projects = [
   },
   {
     id: 5,
-    title: "Savory Kitchen",
+    title: "Dele's Kitchen",
     description: "Restaurant website with online menu and reservation system.",
-    tech: "Webflow, Airtable",
+    tech: "Lovable, React",
     image: project5,
-    link: "#",
+    link: "https://deleskitchen.lovable.app",
   },
   {
     id: 6,
-    title: "HomeQuest Realty",
+    title: "Dele's Reality Hub",
     description: "Real estate platform with property listings and search.",
-    tech: "WordPress, Custom Theme",
+    tech: "Lovable, React",
     image: project6,
-    link: "#",
+    link: "https://delereality.lovable.app",
   },
 ];
 
