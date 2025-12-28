@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const navItems = [
   { label: "About", href: "#about" },
@@ -62,6 +63,7 @@ const Header = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
             </button>
           ))}
+          <ThemeToggle />
           <Button
             variant="hero"
             size="sm"
@@ -99,13 +101,15 @@ const Header = () => {
               {item.label}
             </button>
           ))}
-          <Button
-            variant="hero"
-            onClick={() => scrollToSection("#contact")}
-            className="w-full mt-2"
-          >
-            Let's Talk
-          </Button>
+          <div className="flex items-center justify-between mt-2">
+            <ThemeToggle />
+            <Button
+              variant="hero"
+              onClick={() => scrollToSection("#contact")}
+            >
+              Let's Talk
+            </Button>
+          </div>
         </nav>
       </div>
     </header>
