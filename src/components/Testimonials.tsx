@@ -5,6 +5,24 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import { z } from "zod";
+
+// Validation schema with strict length limits
+const reviewSchema = z.object({
+  name: z.string()
+    .trim()
+    .min(2, "Name must be at least 2 characters")
+    .max(100, "Name must be less than 100 characters"),
+  role: z.string()
+    .trim()
+    .max(100, "Role must be less than 100 characters")
+    .optional()
+    .or(z.literal("")),
+  quote: z.string()
+    .trim()
+    .min(10, "Review must be at least 10 characters")
+    .max(1000, "Review must be less than 1000 characters"),
+});
 
 interface Review {
   id: string;
@@ -58,7 +76,10 @@ const Testimonials = () => {
       .order("created_at", { ascending: false });
 
     if (error) {
-      console.error("Error fetching reviews:", error);
+      // Only log errors in development mode to prevent information leakage
+      if (import.meta.env.DEV) {
+        console.error("Error fetching reviews:", error);
+      }
       return;
     }
 
@@ -92,21 +113,29 @@ const Testimonials = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!formData.name.trim() || !formData.quote.trim()) {
-      toast.error("Please fill in your name and review");
+    // Validate form data using zod schema
+    const validationResult = reviewSchema.safeParse(formData);
+    
+    if (!validationResult.success) {
+      const firstError = validationResult.error.errors[0];
+      toast.error(firstError.message);
       return;
     }
 
+    const validatedData = validationResult.data;
     setIsSubmitting(true);
 
     const { error } = await supabase.from("reviews").insert({
-      name: formData.name.trim(),
-      role: formData.role.trim() || null,
-      quote: formData.quote.trim(),
+      name: validatedData.name,
+      role: validatedData.role || null,
+      quote: validatedData.quote,
     });
 
     if (error) {
-      console.error("Error submitting review:", error);
+      // Only log errors in development mode to prevent information leakage
+      if (import.meta.env.DEV) {
+        console.error("Error submitting review:", error);
+      }
       toast.error("Failed to submit review. Please try again.");
     } else {
       toast.success("Thank you for your review!");
