@@ -6,10 +6,46 @@ import project3 from "@/assets/project-3.jpg";
 import project4 from "@/assets/project-4.jpg";
 import project5 from "@/assets/project-5.jpg";
 import project6 from "@/assets/project-6.jpg";
+import projectMera from "@/assets/project-mera.png";
+import projectRoastedRice from "@/assets/project-roastedrice.png";
+import projectSimiAesthetic from "@/assets/project-simiaesthetic.png";
+import projectJustGogo from "@/assets/project-justgogo.png";
 
 const projects = [
   {
     id: 1,
+    title: "Mera",
+    description: "Social media platform for sharing moments and connecting with friends worldwide.",
+    tech: "Lovable, React",
+    image: projectMera,
+    link: "https://mera1.lovable.app",
+  },
+  {
+    id: 2,
+    title: "Roasted Rice NG",
+    description: "Lagos-style smokey jollof rice and shawarma restaurant with online ordering.",
+    tech: "React, Vercel",
+    image: projectRoastedRice,
+    link: "https://roastedriceng.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Simi Aesthetic",
+    description: "Premium lash extensions, brows, and tattoo services beauty studio in Lagos.",
+    tech: "React, Vercel",
+    image: projectSimiAesthetic,
+    link: "https://simiaestheticx.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "JustGoGolicious",
+    description: "African food delivery and catering service with delicious traditional dishes.",
+    tech: "Web Development",
+    image: projectJustGogo,
+    link: "https://bit.ly/justgogolicious",
+  },
+  {
+    id: 5,
     title: "FlowFlask SaaS",
     description: "Modern SaaS landing page with animations and lead generation forms.",
     tech: "Lovable, React",
@@ -17,7 +53,7 @@ const projects = [
     link: "https://flow-flask.lovable.app",
   },
   {
-    id: 2,
+    id: 6,
     title: "Urban Edge Clothing",
     description: "E-commerce fashion store with seamless checkout experience.",
     tech: "Lovable, React",
@@ -25,7 +61,7 @@ const projects = [
     link: "https://style-refinery-demo.lovable.app",
   },
   {
-    id: 3,
+    id: 7,
     title: "Royal Trims",
     description: "Professional barbing salon website with sleek design.",
     tech: "Lovable, React",
@@ -33,7 +69,7 @@ const projects = [
     link: "https://yomideledemo2.lovable.app",
   },
   {
-    id: 4,
+    id: 8,
     title: "WebDev Insight",
     description: "Web development blog and resource hub with modern design.",
     tech: "Lovable, React",
@@ -41,7 +77,7 @@ const projects = [
     link: "https://webdevdemo.lovable.app",
   },
   {
-    id: 5,
+    id: 9,
     title: "Dele's Kitchen",
     description: "Restaurant website with online menu and reservation system.",
     tech: "Lovable, React",
@@ -49,7 +85,7 @@ const projects = [
     link: "https://deleskitchen.lovable.app",
   },
   {
-    id: 6,
+    id: 10,
     title: "Dele's Reality Hub",
     description: "Real estate platform with property listings and search.",
     tech: "Lovable, React",
@@ -70,7 +106,7 @@ const Portfolio = () => {
             Featured <span className="text-primary">Projects</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A curated collection of website prototypes I've designed and developed as demo projects to showcase my services.
+            A curated collection of websites I've designed and developed for clients and demo projects.
           </p>
         </div>
 
