@@ -72,11 +72,8 @@ const Hero = () => {
 
         {/* Scroll indicator */}
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 opacity-0 animate-fade-up animation-delay-500">
-          <div className="flex flex-col items-center gap-3 text-muted-foreground">
-            <span className="text-sm tracking-wide">Scroll to explore</span>
-            <div className="w-5 h-8 border border-border rounded-full flex justify-center">
-              <div className="w-1 h-2 bg-primary rounded-full mt-2 animate-bounce" />
-            </div>
+          <div className="flex flex-col items-center text-muted-foreground hover:text-primary transition-colors cursor-pointer" onClick={() => document.querySelector("#portfolio")?.scrollIntoView({ behavior: "smooth" })}>
+            <ArrowDown className="w-6 h-6 animate-bounce" />
           </div>
         </div>
       </div>
