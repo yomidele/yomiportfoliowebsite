@@ -16,7 +16,6 @@ const socialServices = [
       "Platform strategy",
       "Audience growth tactics",
     ],
-    price: "From ₦50,000/month",
   },
   {
     icon: PenTool,
@@ -29,7 +28,6 @@ const socialServices = [
       "Brand storytelling",
       "SEO-optimized content",
     ],
-    price: "From ₦30,000",
   },
   {
     icon: Palette,
@@ -42,7 +40,6 @@ const socialServices = [
       "Logo design",
       "Marketing materials",
     ],
-    price: "From ₦20,000",
   },
 ];
 
@@ -68,10 +65,9 @@ const SocialMediaPage = () => {
                 <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
                   <service.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
-                <h3 className="text-xl font-display font-semibold mb-1 group-hover:text-primary transition-colors">
+                <h3 className="text-xl font-display font-semibold mb-4 group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-primary font-medium text-sm mb-4">{service.price}</p>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
                 <ul className="space-y-3">
                   {service.features.map((feature) => (

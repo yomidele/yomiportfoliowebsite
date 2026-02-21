@@ -16,7 +16,7 @@ const services = [
       "Contact forms and lead capture",
       "Analytics integration",
     ],
-    price: "From ₦150,000",
+    price: "From ₦150,000+",
   },
   {
     icon: Layout,
@@ -29,7 +29,7 @@ const services = [
       "Integration with email tools",
       "Clear call-to-action",
     ],
-    price: "From ₦80,000",
+    price: "From ₦80,000+",
   },
   {
     icon: ShoppingCart,
@@ -42,7 +42,7 @@ const services = [
       "Order tracking",
       "Customer accounts",
     ],
-    price: "From ₦250,000",
+    price: "From ₦250,000+",
   },
   {
     icon: Globe,
@@ -55,7 +55,7 @@ const services = [
       "Contact integration",
       "Social media links",
     ],
-    price: "From ₦100,000",
+    price: "From ₦100,000+",
   },
 ];
 
@@ -128,6 +128,7 @@ const ServicesPage = () => {
                       {service.title}
                     </h3>
                     <p className="text-primary font-medium text-sm">{service.price}</p>
+                    <p className="text-muted-foreground text-xs">*Final price may vary based on project scope</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
