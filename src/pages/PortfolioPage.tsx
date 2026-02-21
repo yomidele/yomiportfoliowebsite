@@ -14,12 +14,32 @@ import projectMera from "@/assets/project-mera.png";
 import projectRoastedRice from "@/assets/project-roastedrice.png";
 import projectSimiAesthetic from "@/assets/project-simiaesthetic.png";
 import projectJustGogo from "@/assets/project-justgogo.png";
+import projectEnjoyLifeTrips from "@/assets/project-enjoylifetrips.png";
+import projectAmanaMarkets from "@/assets/project-amanamarkets.png";
 
 const categories = ["All", "Web Apps", "E-commerce", "Restaurants", "Portfolio"];
 
 const projects = [
   {
     id: 1,
+    title: "Enjoy Life Trips",
+    description: "Travel booking platform for exciting trips and adventures across Africa.",
+    tech: "Lovable, React",
+    category: "Web Apps",
+    image: projectEnjoyLifeTrips,
+    link: "https://www.enjoylifetrips.site",
+  },
+  {
+    id: 2,
+    title: "Amana Markets",
+    description: "Financial services platform for savings groups, contributions, and loan access.",
+    tech: "Lovable, React",
+    category: "Web Apps",
+    image: projectAmanaMarkets,
+    link: "https://www.amanamarkets.org",
+  },
+  {
+    id: 3,
     title: "Mera",
     description: "Social media platform for sharing moments and connecting with friends worldwide.",
     tech: "Lovable, React",
