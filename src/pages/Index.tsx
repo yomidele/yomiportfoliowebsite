@@ -3,14 +3,32 @@ import { ArrowRight, ArrowDown, Briefcase, Layout, ShoppingCart, Globe } from "l
 import { Button } from "@/components/ui/button";
 import LayoutWrapper from "@/components/Layout";
 import heroIllustration from "@/assets/hero-illustration.png";
-import avatar from "@/assets/avatar.jpg";
+import avatar from "@/assets/yomi.jpg";
 import projectMera from "@/assets/project-mera.png";
 import projectRoastedRice from "@/assets/project-roastedrice.png";
 import projectSimiAesthetic from "@/assets/project-simiaesthetic.png";
+import projectEnjoyLifeTrips from "@/assets/project-enjoylifetrips.png";
+import projectAmanaMarkets from "@/assets/project-amanamarkets.png";
 
 const featuredProjects = [
   {
     id: 1,
+    title: "Enjoy Life Trips",
+    description: "Travel booking platform for exciting trips and adventures across Africa.",
+    tech: "Lovable, React",
+    image: projectEnjoyLifeTrips,
+    link: "https://www.enjoylifetrips.site",
+  },
+  {
+    id: 2,
+    title: "Amana Markets",
+    description: "Financial services platform for savings groups, contributions, and loan access.",
+    tech: "Lovable, React",
+    image: projectAmanaMarkets,
+    link: "https://www.amanamarkets.org",
+  },
+  {
+    id: 3,
     title: "Mera",
     description: "Social media platform for sharing moments and connecting with friends worldwide.",
     tech: "Lovable, React",
@@ -18,7 +36,7 @@ const featuredProjects = [
     link: "https://mera1.lovable.app",
   },
   {
-    id: 2,
+    id: 4,
     title: "Roasted Rice NG",
     description: "Lagos-style smokey jollof rice and shawarma restaurant with online ordering.",
     tech: "React, Vercel",
@@ -26,7 +44,7 @@ const featuredProjects = [
     link: "https://roastedriceng.vercel.app/",
   },
   {
-    id: 3,
+    id: 5,
     title: "Simi Aesthetic",
     description: "Premium lash extensions, brows, and tattoo services beauty studio.",
     tech: "React, Vercel",
