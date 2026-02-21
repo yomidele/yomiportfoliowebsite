@@ -3,7 +3,7 @@ import { ArrowRight, Code, Palette, Zap, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
-import avatar from "@/assets/yomi.jpg";
+import avatar from "@/assets/gallery.jpg";
 
 const skills = [
   { name: "React & TypeScript", level: 95 },

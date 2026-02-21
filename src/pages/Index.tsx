@@ -3,7 +3,7 @@ import { ArrowRight, ArrowDown, Briefcase, Layout, ShoppingCart, Globe } from "l
 import { Button } from "@/components/ui/button";
 import LayoutWrapper from "@/components/Layout";
 import heroIllustration from "@/assets/hero-illustration.png";
-import avatar from "@/assets/yomi.jpg";
+import avatar from "@/assets/gallery.jpg";
 import projectMera from "@/assets/project-mera.png";
 import projectRoastedRice from "@/assets/project-roastedrice.png";
 import projectSimiAesthetic from "@/assets/project-simiaesthetic.png";
