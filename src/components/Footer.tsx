@@ -6,7 +6,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Linkedin, href: "https://www.linkedin.com/in/yomi-dele-a652a83a2", label: "LinkedIn" },
-    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Instagram, href: "https://www.instagram.com/oriyomi.dele", label: "Instagram" },
     { icon: Twitter, href: "#", label: "Twitter" },
   ];
 
